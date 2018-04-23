@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
@@ -30,10 +33,8 @@
 							<nav id="nav">
 								<ul>
 									<li class="current"><a href="index.html">Home</a></li>
-									<li><a href="#">Project Description</a></li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
+									<li><a href="project-description.html">Project Description</a></li>
+									<li><a href="about-us.html">About Us</a></li>
 								</ul>
 							</nav>
 
@@ -42,25 +43,36 @@
 
 			<!-- Intro -->
 				<div id="intro-wrapper" class="wrapper style1">
-					<div class="title">The Introduction</div>
+					<div class="title">Learning, Simplified</div>
 					<section id="intro" class="container">
-						<p class="style1">So in case you were wondering what this is all about ...</p>
-						<p class="style2">
+						<p class="style1">The best way to learn music</p>
+						<!--<p class="style2">
 							Escape Velocity is a free responsive<br class="mobile-hide" />
 							site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
-						</p>
-						<p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
-						free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
-						your personal or commercial projects &ndash; just be sure to credit us!</p>
+						</p> -->
+						<p class="style3">SecondString is a new <strong>responsive and adaptive</strong> learning application, built for the way <strong>you learn</strong>. It goes at your pace, and uses your <strong> own experience</strong> to build a curriculum for you. </p>
 						<ul class="actions">
-							<li><a href="#" class="button style3 big">Proceed</a></li>
+							<li><a class="button style3 big" onClick="randomGenerator()">Get it Now</a></li>
 						</ul>
+						<p id="output">Current Downloads:</p>
+						<p id="result"></p>
+						<script>
+							function randomGenerator ()
+							{
+								var randomNum = Math.random();
+								var ranNumToTen = 5*randomNum;
+								var roundedRan = Math.ceil(ranNumToTen) + 1000;
+
+								document.getElementById('output').innerHTML = roundedRan;
+								document.getElementById('result').innerHTML +" " +roundedRan + " ";
+							}
+						</script>
 					</section>
 				</div>
 
 			<!-- Main -->
 				<div class="wrapper style2">
-					<div class="title">The Details</div>
+					<div class="title">Features</div>
 					<div id="main" class="container">
 
 						<!-- Image -->
@@ -71,56 +83,42 @@
 						<!-- Features -->
 							<section id="features">
 								<header class="style1">
-									<h2>Dolor consequat feugiat amet veroeros</h2>
-									<p>Feugiat dolor nullam orci pretium phasellus justo</p>
+									<h2>All the tools you need</h2>
+									<p>SecondString has everything you could want.</p>
 								</header>
 								<div class="feature-list">
 									<div class="row">
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="icon fa-comment">Built-in Tuner</h3>
+												<p>Make sure you always have the right pitch with our built in tuner.</p>
 											</section>
 										</div>
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-refresh">Lorem ipsum dolor sit veroeros</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-									</div>
-									<div class="row">
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-picture-o">Pretium phasellus justo lorem</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-cog">Tempus sed pretium orci</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="icon fa-refresh">Guided Tutor</h3>
+												<p>Use your the technology in your hands to learn how to play guitar, and get feedback based on your responses.</p>
 											</section>
 										</div>
 									</div>
 									<div class="row">
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-wrench">Aliquam consequat et feugiat</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="icon fa-space-shuttle">Work At Your Own Pace</h3>
+												<p>No need to follow a tutor or teacher - work as fast or as slow as your learning allows.</p>
 											</section>
 										</div>
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-check">Dolore laoreet aliquam mattis</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="icon fa-check">Tabs From Your Favorite Artists</h3>
+												<p>Nothing give more pride then being able to play your favorite songs on your own. Find tabs from your favorite artists and import them into the app.</p>
 											</section>
 										</div>
 									</div>
 								</div>
 								<ul class="actions actions-centered">
-									<li><a href="#" class="button style1 big">Get Started</a></li>
-									<li><a href="#" class="button style2 big">More Info</a></li>
+									
+									<li><a href="project-description.html" class="button style3 big">More Info</a></li>
 								</ul>
 							</section>
 
@@ -128,43 +126,63 @@
 				</div>
 
 			<!-- Highlights -->
-				<div class="wrapper style3">
-					<div class="title">The Endorsements</div>
-					<div id="highlights" class="container">
-						<div class="row 150%">
-							<div class="4u 12u(mobile)">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3><a href="#">Aliquam diam consequat</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
-									</ul>
-								</section>
-							</div>
-						</div>
+				
+		</div>
+		<!-- Footer -->
+				<div id="footer-wrapper" class="wrapper">
+					<!--<div class="title">The Rest Of It</div>-->
+					<div id="footer" class="container">
+						<hr />
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-home">Mailing Address</h3>
+													<p>
+														Dream Team<br />
+														1234 W Pieront<br />
+														Tempe, AZ 85281
+													</p>
+												</section>
+											</div>
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-comment">Social</h3>
+													<p>
+														<a href="#">@DreamTeam</a><br />
+														
+														<a href="#">facebook.com/DreamTeam</a>
+													</p>
+												</section>
+											</div>
+										</div>
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-envelope">Email</h3>
+													<p>
+														<a href="#">dreamteam@secondstring.club</a>
+													</p>
+												</section>
+											</div>
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-phone">Phone</h3>
+													<p>
+														(000) 555-0000
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+						<hr />
 					</div>
-				</div>
+					<div id="copyright">
+						<ul>
+							<li>&copy;2018 Dream Team</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
 		</div>
 
 		<!-- Scripts -->
