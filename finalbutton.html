@@ -1,0 +1,62 @@
+<html>
+		<head>
+					<style>
+.button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: red}
+
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+		 
+		</head>
+
+		<body>
+
+				<h1></h1>
+
+				<p class = "button" onclick = "randomGenerator()">Download</p>
+
+				<p id = "output"></p>
+
+				<p id = "result"></p>
+
+				
+
+
+				<script language = "Javascript">
+
+				//random value from 0~10
+				function randomGenerator (){
+					var randomNum = Math.random();
+					var ranNumToTen = 5*randomNum;
+					var roundedRan = Math.ceil(ranNumToTen) + 1000;
+
+					document.getElementById('output').innerHTML = roundedRan;
+					document.getElementById('result').innerHTML +" " +roundedRan + " ";
+				}
+
+				
+							
+				</script>
+
+
+		</body>
+
+</html>
